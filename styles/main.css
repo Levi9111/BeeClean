@@ -1,0 +1,372 @@
+:root {
+  --bg-primary: #ffffff;
+  --bg-secondary: #fca311;
+  --bg-accent: #14213d1a;
+  --bg-muted: #f0ede5;
+
+  --text-primary: #ffffff;
+  --text-secondary: #14213d;
+  --text-accent: #050d04cc;
+  --text-muted: ;
+  --text-inverted: ;
+
+  --fixed-width: 1250px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Noto Sans', sans-serif;
+  font-style: normal;
+}
+
+.container {
+  position: relative;
+}
+
+h1 {
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 80px;
+  text-align: center;
+  color: var(--text-primary);
+}
+
+/* common styles */
+
+.color-line {
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-image: linear-gradient(
+    to right,
+    var(--text-secondary) 0%,
+    var(--text-secondary) 50%,
+    var(--bg-secondary) 50%,
+    var(--bg-secondary) 100%
+  );
+}
+
+/* navbar */
+
+.navbar {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 950px;
+  margin: auto;
+}
+
+.nav-items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-items ul {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 50px;
+  list-style-type: none;
+  padding: 0;
+}
+
+.nav-items ul li a {
+  text-decoration: none;
+  color: var(--text-primary);
+}
+
+/* hero section */
+
+.hero {
+  height: 900px;
+  background-image: linear-gradient(
+    180deg,
+    rgba(20, 33, 61, 0.5),
+    rgba(5, 13, 4, 0.5)
+  );
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+
+/* TODO: Fix video width */
+.video {
+  height: 100%;
+  /* min-height:850px; */
+  position: relative;
+  z-index: -1;
+}
+
+.hero-content {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content .items {
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content .items .title {
+  text-align: center;
+  margin: 50px 0 38px;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26.4px;
+  text-align: center;
+}
+
+.btn-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+}
+
+.hero-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 16px 20px;
+  border-radius: 10px;
+  border: 0;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 27.24px;
+  color: var(--text-secondary);
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: var(--bg-secondary);
+}
+
+.btn-secondary {
+  background-color: var(--bg-primary);
+}
+
+/* services */
+
+.services {
+  background-color: var(--bg-muted);
+  padding-top: 150px;
+}
+
+.services-title-container {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.services-title {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 48px;
+  text-align: center;
+  color: var(--text-secondary);
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+
+.services-text {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26.4px;
+  text-align: center;
+  color: var(--text-secondary);
+  margin-top: 40px;
+}
+
+.services-container {
+  padding-top: 99px;
+  width: var(--fixed-width);
+  margin: 0 auto;
+}
+
+.services-img-cards-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.services-img-card img {
+  width: 100%;
+  height: 100%;
+}
+.services-img-card {
+  position: relative;
+  width: 305px;
+  height: 364px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.services-img-title {
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px 10px 0 0;
+  background-color: var(--text-secondary);
+}
+
+.services-img-title h3 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 27.24px;
+  text-align: center;
+  color: var(--text-primary);
+}
+
+.services-commercials {
+  height: 350px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.services-commercials img {
+  width: 100%;
+  height: 100%;
+}
+
+.commercials-description {
+  background-color: var(--text-secondary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 35px;
+}
+
+.commercials-description h4 {
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  color: var(--text-primary);
+}
+
+.commercials-description p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+  color: var(--text-primary);
+  margin: 40px 0;
+}
+
+.commercials-description button {
+  border: 0;
+  background-color: var(--bg-secondary);
+  border-radius: 10px;
+  color: var(--text-secondary);
+  font-size: 20px;
+  font-weight: 700;
+  padding: 20px;
+  cursor: pointer;
+}
+
+/* standout section */
+
+.standout-options {
+  background-color: #f0ede5;
+  padding: 150px 0;
+}
+
+.standout-options-card-container {
+  width: var(--fixed-width);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 30px;
+  padding-top: 99px;
+}
+
+.standout-options-card {
+}
+
+.standout-options-card h4 {
+  font-size: 20px;
+  font-weight: 700;
+  text-align: left;
+  color: var(--text-secondary);
+  margin: 30px 0 20px;
+}
+
+.standout-options-card p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20.8px;
+  text-align: left;
+  color: var(--text-accent);
+}
+
+.reviews {
+  background-color: #dad9d4;
+  padding: 160px 0;
+}
+
+.reviews-container {
+  width: var(--fixed-width);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.reviews-title-container {
+}
+
+.reviews-btn-container {
+}
+
+.reviews-btn-primary {
+}
+
+.reviews-btn-secondary {
+}
+
+.reviews-card-container {
+}
+
+.reviews-card {
+}
+
+.reviewer-info {
+}
+
+.reviewer-info img {
+}
+
+.reviewer-details {
+}
+
+.reviewer-details h4 {
+}
+
+.reviewer-details p {
+}
