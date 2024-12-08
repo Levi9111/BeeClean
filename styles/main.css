@@ -66,11 +66,11 @@ h3 {
   line-height: 48px;
   text-transform: uppercase;
   margin-bottom: 40px;
-  line-height: 31px;
 
   @media only screen and (max-width: 768px) {
     font-size: 24px;
     font-weight: 700;
+    line-height: 31px;
     margin-bottom: 30px;
   }
 }
@@ -297,7 +297,7 @@ h1 {
   overflow: hidden;
 
   @media only screen and (max-width: 768px) {
-    height: 650px;
+    min-height: 650px;
   }
 }
 
@@ -565,12 +565,33 @@ h1 {
   }
 }
 
+.standout-options-card {
+  @media only screen and (max-width: 768px) {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    font-size: 18px;
+  }
+}
+
+.standout-options-card img {
+  @media only screen and (max-width: 768px) {
+    width: 100%;
+    max-width: 81px;
+  }
+}
+
 .standout-options-card h4 {
   font-size: 20px;
   font-weight: 700;
   text-align: left;
   color: var(--text-secondary);
   margin: 30px 0 20px;
+  @media only screen and (max-width: 768px) {
+    font-size: 18px;
+    margin: 0 0 15px 0;
+  }
 }
 
 .standout-options-card p {
@@ -873,8 +894,8 @@ h1 {
   font-size: 20px;
   font-weight: 700;
   color: var(--text-secondary);
+  margin-bottom: 0;
   @media only screen and (max-width: 768px) {
-    margin-bottom: 0;
   }
 }
 
@@ -893,6 +914,9 @@ h1 {
 
 .contact-btn-container {
   padding-right: 20px;
+  @media only screen and (max-width: 768px) {
+    padding-right: 0;
+  }
 }
 
 .contact-btn-container button {
@@ -1096,6 +1120,11 @@ h1 {
     grid-template-rows: auto;
     justify-content: center;
   }
+
+  @media only screen and (max-width: 228px) {
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
 }
 
 .excellence-img-container img {
@@ -1104,7 +1133,8 @@ h1 {
     max-width: 171px;
     width: 100%;
     max-height: 171px;
-    place-content: center;
+    object-fit: cover;
+    object-position: left;
   }
 }
 
@@ -1405,6 +1435,7 @@ h1 {
 .footer a,
 .footer p {
   color: var(--bg-primary);
+  font-size: 16px;
 }
 
 .footer li {
@@ -1437,6 +1468,7 @@ h1 {
   @media only screen and (max-width: 768px) {
     flex-direction: column;
     padding-bottom: 50px;
+    gap: 0;
   }
 }
 
@@ -1486,6 +1518,7 @@ h1 {
   margin-top: 47px;
   @media only screen and (max-width: 768px) {
     flex-direction: column;
+    margin-top: 0;
   }
 }
 
@@ -1509,11 +1542,22 @@ h1 {
   line-height: 27.24px;
   text-align: left;
   margin-bottom: 49px;
+  @media only screen and (max-width: 768px) {
+    font-size: 18px;
+    margin: 50px 0 20px;
+  }
 }
 .footer-details-specifications ul {
   display: flex;
   flex-direction: column;
   gap: 16px;
+}
+
+.footer-details .footer-details-specifications:not(:last-child) ul {
+  @media only screen and (max-width: 768px) {
+    height: 100px;
+    flex-wrap: wrap;
+  }
 }
 
 .footer-details-specifications li {
@@ -1525,7 +1569,6 @@ h1 {
 
 .footer-details-specifications li:nth-child(4) {
   @media only screen and (max-width: 768px) {
-    background-color: red;
     display: block;
   }
 }
@@ -1566,6 +1609,10 @@ h1 {
   @media only screen and (max-width: 768px) {
     text-align: center;
     padding: 20px 0;
+
+    @media only screen and (max-width: 768px) {
+      font-size: 14px;
+    }
   }
 }
 
