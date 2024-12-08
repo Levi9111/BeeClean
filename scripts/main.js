@@ -76,11 +76,9 @@ burgerMenu.addEventListener('click', function () {
 // @media only screen and (max-width: 600px) {
 // }
 
-// @media only screen and (max-width: 768px) {
-// }
+// @media only screen and (max-width: 768px) {}
 
 // @media only screen and (max-width: 992px) {
 // }
 
-// @media only screen and (max-width: 1200px) {
-// }
+// @media only screen and (max-width: 1200px) {}
