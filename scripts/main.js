@@ -100,7 +100,6 @@ accordionLabels.forEach((label) => {
 
 // @media only screen and (max-width: 768px) {}
 
-// @media only screen and (max-width: 992px) {
-// }
+// @media only screen and (max-width: 992px) {}
 
 // @media only screen and (max-width: 1200px) {}
