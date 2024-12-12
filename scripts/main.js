@@ -101,12 +101,3 @@ slider.addEventListener('input', function () {
   const sliderValue = slider.value;
   secondImg.style.clipPath = `polygon(0 0, ${sliderValue}% 0, ${sliderValue}% 100%, 0 100%)`;
 });
-
-// @media only screen and (max-width: 600px) {
-// }
-
-// @media only screen and (max-width: 768px) {}
-
-// @media only screen and (max-width: 992px) {}
-
-// @media only screen and (max-width: 1200px) {}

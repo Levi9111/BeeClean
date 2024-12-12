@@ -76,15 +76,6 @@ h3 {
   display: none !important;
 }
 
-/* TODO: Make a different common class with these styles */
-/*  padding: var(--variable-padding);
-  @media only screen and (max-width: 1200px) {
-    padding: 123px 0 100px;
-  } */
-
-/*   width: var(--fixed-width);
-  margin: 0 auto; */
-
 h1 {
   font-size: 80px;
   font-weight: 700;
@@ -145,14 +136,14 @@ h1 {
   background-repeat: no-repeat;
 }
 
-.reviews-btn-container {
+.primary-contact-btn-container {
   display: flex;
   align-items: center;
   justify-content: start;
   gap: 10px;
 }
 
-.reviews-btn-container button {
+.primary-contact-btn-container button {
   padding: 0 20px;
   height: 46px;
   border-radius: var(--base-radius);
@@ -161,12 +152,12 @@ h1 {
   cursor: pointer;
 }
 
-.reviews-btn-primary {
+.contact-us-btn {
   background-color: var(--text-secondary);
   color: var(--text-primary);
 }
 
-.reviews-btn-secondary {
+.send-message-btn {
   background-color: var(--bg-secondary);
   color: var(--text-secondary);
 }
@@ -291,7 +282,6 @@ h1 {
   overflow: hidden;
 }
 
-/* TODO: Fix video width */
 .video-container {
   position: absolute;
   top: 0;
@@ -2265,11 +2255,11 @@ h1 {
     height: auto;
   }
 
-  .reviews-btn-container {
+  .primary-contact-btn-container {
     flex-direction: column;
   }
 
-  .reviews-btn-container button {
+  .primary-contact-btn-container button {
     width: 100%;
     text-transform: uppercase;
   }
