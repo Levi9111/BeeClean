@@ -786,7 +786,7 @@ h1 {
   color: var(--text-secondary);
 }
 
-.reviewer-details p {
+.reviews-card p {
   font-size: 16px;
   font-weight: 400;
   line-height: 20.8px;
@@ -1961,8 +1961,6 @@ h1 {
 }
 
 /* FAQ Section */
-.faq {
-}
 
 .faq-container {
   width: var(--fixed-width);
@@ -2015,8 +2013,6 @@ h1 {
   }
 }
 
-/* 332 284 331 */
-
 .contacts-card:first-child {
   width: 332px;
 }
@@ -2058,6 +2054,261 @@ h1 {
   line-height: 20.8px;
   text-align: center;
   color: var(--text-secondary);
+}
+
+/* Case Study */
+
+.case-study {
+  background-color: var(--light-grey);
+  padding: 283px 0 150px;
+}
+
+.case-study-container {
+  width: var(--fixed-width);
+  margin: 0 auto;
+}
+
+.case-study-btn-container {
+  display: grid;
+  grid-template-rows: repeat(7, 1fr);
+  grid-gap: 10px;
+}
+
+.case-study-btn-container button {
+  border-radius: 10px;
+  background-color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+}
+
+.case-study-btn-container button a {
+  color: var(--bg-primary);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21.6px;
+  text-align: left;
+  margin-left: 20px;
+}
+
+.clicked {
+  background-color: var(--bg-secondary) !important;
+  color: var(--text-secondary) !important;
+}
+
+.case-study-img-container {
+  padding: 100px 0;
+  display: grid;
+  grid-template-columns: 413px 847px;
+  grid-gap: 20px;
+}
+
+.case-study-img-container img {
+  border-radius: 20px;
+}
+
+.case-study p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20.8px;
+  text-align: left;
+  color: var(--text-accent);
+}
+
+.case-study-processes h4 {
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 46.2px;
+  text-align: left;
+  color: var(--text-secondary);
+  margin-bottom: 50px;
+}
+
+.case-study-processes p:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.commonly-asked-question {
+  margin: 40px 0 50px;
+}
+
+.commonly-asked-question h4 {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 28.6px;
+  text-align: left;
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.commonly-asked-question h4 span {
+  display: inline-block;
+  height: 27px;
+  width: 10px;
+  margin-right: 20px;
+  background-color: var(--bg-secondary);
+}
+
+.commonly-asked-question h5 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21.6px;
+  text-align: left;
+  color: var(--text-accent);
+  margin-bottom: 20px;
+}
+
+.commonly-asked-question p:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.img-comparison-unit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.img-container {
+  min-width: 630px;
+  min-height: 396px;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+.img-container img {
+  position: absolute;
+  width: 100%;
+}
+
+#second-img {
+  clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);
+}
+
+#slider {
+  position: relative;
+  -webkit-appearance: none;
+  background: transparent;
+  width: 100%;
+  height: 100%;
+  margin-top: 30%;
+}
+
+#slider:focus {
+  outline: none;
+}
+
+#slider::-ms-track {
+  width: 100%;
+  cursor: pointer;
+  background-color: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+
+#slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  background: var(--bg-primary);
+  height: 30px;
+  width: 30px;
+  border-radius: 100%;
+  background-image: url('./../assets/icon/slider-arrow.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.img-comparison-unit .comparison-details {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.img-comparison-unit .comparison-details h5 {
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  text-align: left;
+  color: var(--text-accent);
+}
+
+.img-comparison-unit .comparison-details p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20.8px;
+  text-align: left;
+  color: var(--text-accent);
+}
+
+.testimonials {
+  background-color: var(--light-grey);
+  padding: 284px 0 150px;
+}
+
+.testimonials-container {
+  width: var(--fixed-width);
+  margin: 0 auto;
+}
+
+.testimonials-cards-container {
+  margin-top: 100px;
+  width: 100%;
+  position: relative;
+}
+
+@media only screen and (min-width: 1201px) {
+  .testimonials-cards-container {
+    height: 509px;
+  }
+
+  .testimonials-cards-container .reviews-card {
+    position: absolute;
+  }
+
+  .testimonials-cards-container .reviews-card:first-child {
+    top: 0;
+    left: 0;
+  }
+
+  .testimonials-cards-container .reviews-card:nth-child(2) {
+    top: 0;
+    left: 433px;
+  }
+
+  .testimonials-cards-container .reviews-card:nth-child(3) {
+    top: 0;
+    right: 0;
+  }
+
+  .testimonials-cards-container .reviews-card:nth-child(4) {
+    bottom: 0;
+    left: 0;
+  }
+
+  .testimonials-cards-container .reviews-card:nth-child(5) {
+    bottom: 0;
+    left: 433px;
+  }
+
+  .testimonials-cards-container .reviews-card:last-child {
+    bottom: 0;
+    right: 0;
+  }
+
+  .testimonials-cards-container .reviews-card:nth-child(2) {
+    /* margin-right: 20px; */
+  }
+}
+
+.testimonials-btn-container {
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
 }
 
 /* footer */
@@ -2364,6 +2615,11 @@ h1 {
   .reviews-card {
     width: 100%;
     height: max-content;
+    margin-bottom: 20px;
+  }
+
+  .reviews-card:not(:last-child) {
+    margin-bottom: 20px;
   }
 
   .contact {
@@ -2609,6 +2865,32 @@ h1 {
   .secondary-footer p br {
     display: block;
   }
+
+  .case-study-img-container {
+    padding: 50px 0;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+
+  .case-study-img-container img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .case-study-btn-container {
+    display: none;
+  }
+
+  .img-comparison-unit {
+    flex-direction: column;
+  }
+
+  /* TODO: Fix margin-top */
+
+  #slider {
+    margin-top: 20%;
+  }
 }
 
 @media only screen and (max-width: 992px) {
@@ -2750,6 +3032,12 @@ h1 {
 
   .contact-title-container button {
     width: 100%;
+    gap: 4px;
+  }
+
+  .contact-title-container button p {
+    text-transform: uppercase;
+    font-size: 18px;
   }
 
   .contact-form-container {
@@ -2985,6 +3273,27 @@ h1 {
 
   .footer-details-specifications h4 {
     font-size: 18px;
+  }
+
+  .img-container {
+    min-width: 100%;
+    min-height: 220px;
+  }
+
+  .case-study-processes h4 {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 28.6px;
+    text-align: left;
+  }
+
+  .case-study-img-container img {
+    height: 200px;
+    object-position: top;
+  }
+
+  .testimonials {
+    padding: 123px 0 100px;
   }
 }
 

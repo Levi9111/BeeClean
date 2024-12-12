@@ -7,6 +7,8 @@ const burgerMenu = document.querySelector('.burger-menu');
 const navItems = document.querySelector('.responsive-nav-items');
 const logo = document.getElementById('nav-logo');
 const accordionLabels = document.querySelectorAll('.accordion label');
+const slider = document.getElementById('slider');
+const secondImg = document.getElementById('second-img');
 
 function updateNavOnScroll(scrollY) {
   if (scrollY > 250) applyFixedNavStyles();
@@ -93,6 +95,11 @@ accordionLabels.forEach((label) => {
     labelImg.style.filter = 'brightness(0) invert(1)';
     labelImg.style.transform = 'rotate(180deg)';
   });
+});
+
+slider.addEventListener('input', function () {
+  const sliderValue = slider.value;
+  secondImg.style.clipPath = `polygon(0 0, ${sliderValue}% 0, ${sliderValue}% 100%, 0 100%)`;
 });
 
 // @media only screen and (max-width: 600px) {
