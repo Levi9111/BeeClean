@@ -1193,9 +1193,9 @@ h1 {
   grid-gap: 20px;
 
   @media only screen and (max-width: 1200px) {
-    display: flex;
+    /* display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: center; */
   }
 
   @media only screen and (max-width: 768px) {
@@ -1213,7 +1213,7 @@ h1 {
 .excellence-img-container img {
   border-radius: 20px;
   @media only screen and (max-width: 768px) {
-    max-width: 171px;
+    /* max-width: 171px; */
     width: 100%;
     max-height: 171px;
     object-fit: cover;
@@ -2660,9 +2660,17 @@ h1 {
   }
 
   .excellence-img-container {
-    display: flex;
-    flex-wrap: wrap;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
     justify-content: center;
+  }
+
+  .excellence-img-container img {
+    /* max-width: 171px; */
+    width: 100%;
+    max-height: 171px;
+    object-fit: cover;
+    object-position: left;
   }
 
   .location-container {
@@ -2960,7 +2968,7 @@ h1 {
   }
 
   .hero-content .items {
-    width: 950%;
+    width: 95%;
   }
 
   .hero-content .items .title {
@@ -3118,15 +3126,13 @@ h1 {
   }
 
   .excellence-img-container {
-    @media only screen and (max-width: 768px) {
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: auto;
-      justify-content: center;
-    }
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    justify-content: center;
   }
 
   .excellence-img-container img {
-    max-width: 171px;
+    /* max-width: 171px; */
     width: 100%;
     max-height: 171px;
     object-fit: cover;
@@ -3304,11 +3310,9 @@ h1 {
   }
 }
 
-@media only screen and (max-width: 228px) {
+@media only screen and (max-width: 280px) {
   .excellence-img-container {
-    @media only screen and (max-width: 228px) {
-      grid-template-columns: 1fr;
-      justify-content: center;
-    }
+    grid-template-columns: 1fr;
+    justify-content: center;
   }
 }
