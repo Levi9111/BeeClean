@@ -9,6 +9,12 @@ const logo = document.getElementById('nav-logo');
 const accordionLabels = document.querySelectorAll('.accordion label');
 const slider = document.getElementById('slider');
 const secondImg = document.getElementById('second-img');
+const caseStudyBtns = document.querySelectorAll(
+  '.case-study-btn-container button',
+);
+const excellenceBtns = document.querySelectorAll(
+  '.excellence-btn-container button',
+);
 
 function updateNavOnScroll(scrollY) {
   if (scrollY > 250) applyFixedNavStyles();
@@ -97,7 +103,27 @@ accordionLabels.forEach((label) => {
   });
 });
 
-slider.addEventListener('input', function () {
-  const sliderValue = slider.value;
-  secondImg.style.clipPath = `polygon(0 0, ${sliderValue}% 0, ${sliderValue}% 100%, 0 100%)`;
+if (slider) {
+  slider.addEventListener('input', function () {
+    const sliderValue = slider.value;
+    secondImg.style.clipPath = `polygon(0 0, ${sliderValue}% 0, ${sliderValue}% 100%, 0 100%)`;
+  });
+}
+excellenceBtns.forEach((btn) => {
+  btn.addEventListener('click', function () {
+    excellenceBtns.forEach((btn) => {
+      btn.classList.remove('active');
+    });
+    btn.classList.add('active');
+  });
+});
+
+caseStudyBtns.forEach((btn) => {
+  btn.addEventListener('click', function () {
+    caseStudyBtns.forEach((btn) => {
+      btn.classList.remove('clicked');
+    });
+
+    btn.classList.add('clicked');
+  });
 });
