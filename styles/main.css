@@ -468,7 +468,7 @@ h1 {
   margin: 40px 0;
 }
 
-.commercials-description button {
+.commercial-btn {
   border: 0;
   background-color: var(--bg-secondary);
   border-radius: var(--base-radius);
@@ -1904,10 +1904,65 @@ h1 {
   .services-img-cards-container {
     flex-wrap: wrap;
   }
+
+  .services-img-title {
+    position: relative;
+    z-index: 8;
+  }
+
+  .services-img-card-content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(to right, #14213d99, #14213d99);
+  }
+
+  .services-img-card-content p {
+    width: 80%;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .services-img-card-content button {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .services-img-card-content p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20.8px;
+    text-align: center;
+    /* margin-bottom: 30px; */
+    color: var(--bg-primary);
+  }
+
+  .services-img-card-content button {
+    margin: 0 auto;
+  }
+
   .services-commercials {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
     height: 100%;
+  }
+
+  .commercial-btn {
+    width: 156px;
+    padding: 0;
+    height: 53px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24.52px;
+    text-align: center;
   }
 
   .standout-options-card-container {
@@ -2008,6 +2063,7 @@ h1 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
   }
 
   .accordion-section-title h3 {
@@ -2626,7 +2682,7 @@ h1 {
 @media only screen and (max-width: 368px) {
   .services-img-card {
     width: 100%;
-    height: auto;
+    /* height: auto; */
   }
 }
 
