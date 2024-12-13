@@ -1642,12 +1642,18 @@ h1 {
 }
 
 #slider {
-  position: relative;
+  position: absolute;
+  top: -50%;
+  right: -2.5%;
   -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   background: transparent;
-  width: 100%;
+  width: 105%;
   height: 100%;
-  margin-top: 30%;
+  margin: 0 auto;
+  transform: translateY(50%);
+  /* margin-top: 30%; */
 }
 
 #slider:focus {
@@ -1655,7 +1661,7 @@ h1 {
 }
 
 #slider::-ms-track {
-  width: 100%;
+  /* width: 100%; */
   cursor: pointer;
   background-color: transparent;
   border-color: transparent;
@@ -2286,7 +2292,7 @@ h1 {
   /* TODO: Fix margin-top */
 
   #slider {
-    margin-top: 20%;
+    /* margin-top: 25%; */
   }
 }
 
