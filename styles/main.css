@@ -223,6 +223,21 @@ h1 {
   position: relative;
 }
 
+.nav-items ul li a::after {
+  content: '';
+  position: absolute;
+  top: 25px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  border-radius: var(--base-radius);
+  background-color: var(--bg-primary);
+  transition: width 0.3s;
+}
+.nav-items ul li a:hover::after {
+  width: 100%;
+}
+
 .responsive-navbar {
   position: absolute;
   left: 0;
