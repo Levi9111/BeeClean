@@ -1849,7 +1849,7 @@ h1 {
   display: none;
 }
 
-@media only screen and (min-width: 1201px) {
+@media only screen and (min-width: 1261px) {
   .testimonials-cards-container {
     height: 509px;
   }
