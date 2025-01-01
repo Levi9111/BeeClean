@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="css/theme.css">
+      <link rel="stylesheet" href="css/style.css">
+
     <title>Case Study | BeeClean</title>
 </head>
 
@@ -21,7 +21,7 @@
 
                 <!-- navbar -->
                 <nav class="secondary-navbar">
-                    <div class="nav-items">
+                    <div class="pw_container nav-items">
                         <ul>
                             <li><a href="/services.html">Servicii</a></li>
                             <li><a href="/why-us.html">De ce noi</a></li>
@@ -67,14 +67,15 @@
 
 
             <div class="case-study">
+              <div class="pw_container">
                 <div class="case-study-container">
                     <div class="section-title-container">
-                        <h3 class="section-title">
+                        <h3 class="section-title pw_section-title ">
                             Curățare Acoperiș #1
                         </h3>
-                        <span class="color-line"></span>
-                        <p class="section-text text-moblie-blue">Folosind echipamente profesionale, am curățat eficient
-                            acoperișul de
+                        <div class="pw_divider"></div>
+                        <p class="pw-cas-section-des-text text-moblie-blue pw_section-des text-center">Folosind echipamente profesionale, am curățat eficient
+                            acoperișul de <br class="desk">
                             mucegai și mușchi, restabilind aspectul său fără a provoca daune.</p>
                     </div>
                     <div class="case-study-img-container">
@@ -153,130 +154,135 @@
                         </div>
                     </div>
                 </div>
+              </div>
             </div>
-            <!-- Contact Section -->
-            <section class="contact overlay-image">
+              <!-- Contact Section -->
+              <section class="contact overlay-image">
 
-                <div class="contact-container">
-                    <div class="contact-title-container">
-                        <h3>Contactează-ne</h3>
-                        <span class="color-line-2"></span>
-                        <p>Pentru a afla mai multă informație nu ezitați sa ne contactați.</p>
-                        <button>
-                            <img src="./assets/icon/bee.png" alt="Bee">
-                            <p>Obține o Estimare Gratuită</p>
-                        </button>
-                    </div>
-
-                    <div class="contact-form-container">
-                        <form>
-                            <div class="contact-form-input">
-                                <input type="text" name="" id="" placeholder="Prenume">
-                                <input type="email" name="" id="" placeholder="E-Mail">
-                                <input type="number" name="" id="" placeholder="Număr de telefon">
-                                <textarea name="" id="" placeholder="Mesaj"></textarea>
-                            </div>
-
-                            <div class="contact-form-services">
-                                <h3>Servicii</h3>
-
-
-                                <!-- Radio Inputs -->
-                                <div class="contact-form-services-radio-container">
-                                    <div class="custom-radio">
-                                        <div class="custom-radio-btn-container">
-
-                                            <input type="radio" id="option1" value="option1" name="service">
-                                            <div class="custom-radio-btn"></div>
-                                        </div>
-                                        <label for="option1">Curățare Casă</label>
-                                    </div>
-
-                                    <div class="custom-radio">
-                                        <div class="custom-radio-btn-container">
-
-                                            <input type="radio" id="option2" value="option2" name="service">
-                                            <div class="custom-radio-btn"></div>
-                                        </div>
-                                        <label for="option2">Curățare Alee Auto</label>
-                                    </div>
-
-                                    <div class="custom-radio">
-                                        <div class="custom-radio-btn-container">
-
-                                            <input type="radio" id="option3" value="option3" name="service">
-                                            <div class="custom-radio-btn"></div>
-                                        </div>
-                                        <label for="option3">Curățare Acoperiș</label>
-                                    </div>
-
-                                    <div class="custom-radio">
-                                        <div class="custom-radio-btn-container">
-
-                                            <input type="radio" id="option4" value="option4" name="service">
-                                            <div class="custom-radio-btn"></div>
-                                        </div>
-                                        <label for="option4">Curățare Terasă</label>
-                                    </div>
-
-                                    <div class="custom-radio">
-                                        <div class="custom-radio-btn-container">
-
-                                            <input type="radio" id="option5" value="option5" name="service">
-                                            <div class="custom-radio-btn"></div>
-                                        </div>
-                                        <label for="option5">Curățare Jgheaburi</label>
-                                    </div>
-
-                                    <div class="custom-radio">
-                                        <div class="custom-radio-btn-container">
-
-                                            <input type="radio" id="option6" value="option6" name="service">
-                                            <div class="custom-radio-btn"></div>
-                                        </div>
-                                        <label for="option6">Îndepărtare Rugină</label>
-                                    </div>
-
-                                    <div class="custom-radio">
-                                        <div class="custom-radio-btn-container">
-
-                                            <input type="radio" id="option7" value="option7" name="service">
-                                            <div class="custom-radio-btn"></div>
-                                        </div>
-                                        <label for="option7">Îndepărtare Graffiti</label>
-                                    </div>
-
-                                    <div class="custom-radio">
-                                        <div class="custom-radio-btn-container">
-
-                                            <input type="radio" id="option8" value="option8" name="service">
-                                            <div class="custom-radio-btn"></div>
-                                        </div>
-                                        <label for="option8">Curățare Feronerie Exterioară</label>
-                                    </div>
-
-                                    <div class="custom-radio">
-                                        <div class="custom-radio-btn-container">
-
-                                            <input type="radio" id="option9" value="option9" name="service">
-                                            <div class="custom-radio-btn"></div>
-                                        </div>
-                                        <label for="option9">Curățare Comercială cu Presiune</label>
-                                    </div>
-                                </div>
-
-                                <div class="contact-btn-container">
-                                    <button type="submit">Trimite Mesaj</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-
+                <div class="pw_container">
+                 <div class="contact-container">
+                     <div class="contact-title-container">
+                         <h3 class="pw_section-title">Contactează-ne</h3>
+                         <div class="pw_divider white"></div>
+                         <p class="pw_section-des">Pentru a afla mai multă informație nu ezitați sa ne contactați.</p>
+                         <button>
+                             <img src="./assets/icon/bee.png" alt="Bee">
+                             <p>Obține o Estimare Gratuită</p>
+                         </button>
+                     </div>
+ 
+                     <div class="contact-form-container">
+                         <form>
+                             <div class="contact-form-input">
+                                 <input type="text" name="" id="" placeholder="Prenume">
+                                 <input type="email" name="" id="" placeholder="E-Mail">
+                                 <input type="number" name="" id="" placeholder="Număr de telefon">
+                                 <textarea name="" id="" placeholder="Mesaj"></textarea>
+                             </div>
+ 
+                             <div class="contact-form-services">
+                                 <h3>Servicii</h3>
+ 
+ 
+                                 <!-- Radio Inputs -->
+                                 <div class="contact-form-services-radio-container">
+                                     <div class="custom-radio">
+                                         <div class="custom-radio-btn-container">
+ 
+                                             <input type="radio" id="option1" value="option1" name="service">
+                                             <div class="custom-radio-btn"></div>
+                                         </div>
+                                         <label for="option1">Curățare Casă</label>
+                                     </div>
+ 
+                                     <div class="custom-radio">
+                                         <div class="custom-radio-btn-container">
+ 
+                                             <input type="radio" id="option2" value="option2" name="service">
+                                             <div class="custom-radio-btn"></div>
+                                         </div>
+                                         <label for="option2">Curățare Alee Auto</label>
+                                     </div>
+ 
+                                     <div class="custom-radio">
+                                         <div class="custom-radio-btn-container">
+ 
+                                             <input type="radio" id="option3" value="option3" name="service">
+                                             <div class="custom-radio-btn"></div>
+                                         </div>
+                                         <label for="option3">Curățare Acoperiș</label>
+                                     </div>
+ 
+                                     <div class="custom-radio">
+                                         <div class="custom-radio-btn-container">
+ 
+                                             <input type="radio" id="option4" value="option4" name="service">
+                                             <div class="custom-radio-btn"></div>
+                                         </div>
+                                         <label for="option4">Curățare Terasă</label>
+                                     </div>
+ 
+                                     <div class="custom-radio">
+                                         <div class="custom-radio-btn-container">
+ 
+                                             <input type="radio" id="option5" value="option5" name="service">
+                                             <div class="custom-radio-btn"></div>
+                                         </div>
+                                         <label for="option5">Curățare Jgheaburi</label>
+                                     </div>
+ 
+                                     <div class="custom-radio">
+                                         <div class="custom-radio-btn-container">
+ 
+                                             <input type="radio" id="option6" value="option6" name="service">
+                                             <div class="custom-radio-btn"></div>
+                                         </div>
+                                         <label for="option6">Îndepărtare Rugină</label>
+                                     </div>
+ 
+                                     <div class="custom-radio">
+                                         <div class="custom-radio-btn-container">
+ 
+                                             <input type="radio" id="option7" value="option7" name="service">
+                                             <div class="custom-radio-btn"></div>
+                                         </div>
+                                         <label for="option7">Îndepărtare Graffiti</label>
+                                     </div>
+ 
+                                     <div class="custom-radio">
+                                         <div class="custom-radio-btn-container">
+ 
+                                             <input type="radio" id="option8" value="option8" name="service">
+                                             <div class="custom-radio-btn"></div>
+                                         </div>
+                                         <label for="option8">Curățare Feronerie Exterioară</label>
+                                     </div>
+ 
+                                     <div class="custom-radio">
+                                         <div class="custom-radio-btn-container">
+ 
+                                             <input type="radio" id="option9" value="option9" name="service">
+                                             <div class="custom-radio-btn"></div>
+                                         </div>
+                                         <label for="option9">Curățare Comercială cu Presiune</label>
+                                     </div>
+                                 </div>
+ 
+                                 <div class="contact-btn-container">
+                                     <button type="submit">Trimite Mesaj</button>
+                                 </div>
+                             </div>
+                         </form>
+                     </div>
+ 
+                 </div>
                 </div>
-            </section>
+             </section>
+ 
 
-            <!-- Map location section -->
-            <section class="location">
+           <!-- Map location section -->
+           <section class="location">
+            <div class="pw_container">
                 <div class="location-container">
                     <div class="location-map">
                         <iframe
@@ -288,9 +294,9 @@
                     <div class="location-details">
 
                         <div class="location-title">
-                            <h3>Proprietatea ta merită Beeclean!</h3>
-                            <span class="color-line"></span>
-                            <p>Descoperă frumusețea ascunsă a proprietății tale cu BeeClean Pressure Washing. Servind
+                            <h3 class="pw_section-title">Proprietatea ta merită Beeclean!</h3>
+                            <div class="pw_divider"> </div>
+                            <p class="pw_section-des">Descoperă frumusețea ascunsă a proprietății tale cu BeeClean Pressure Washing. Servind
                                 orașele din România, echipa noastră de experți revitalizează suprafețele prin spălare cu
                                 presiune avansată. Pentru spații mai curate și atractive, alege BeeClean și vezi
                                 transformarea!</p>
@@ -390,10 +396,11 @@
 
                     </div>
                 </div>
-            </section>
-
-            <!-- footer -->
-            <footer class="footer">
+            </div>
+        </section>
+          <!-- footer -->
+          <footer class="footer">
+            <div class="pw_container">
                 <div class="footer-container">
                     <div class="main-footer">
 
@@ -468,12 +475,16 @@
                         </div>
 
                     </div>
-
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1281" height="2" viewBox="0 0 1281 2" fill="none">
+                        <path d="M1 1L1280 1.00011" stroke="white" stroke-linecap="round" />
+                    </svg>
                     <!-- secondary footer -->
                     <div class="secondary-footer">
-
                         <p>All Rights Reserved © 2024 <span>|</span> <br> BeeClean Pressure Washing SRL</p>
-
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1281" height="2" viewBox="0 0 1281 2" fill="none"
+                            class="mobi">
+                            <path d="M1 1L1280 1.00011" stroke="white" stroke-linecap="round" />
+                        </svg>
                         <div>
                             <a href="#">Privacy Policy</a>
                             <a href="#">Terms & Conditions</a>
@@ -481,12 +492,15 @@
 
                     </div>
                 </div>
-            </footer>
-
+            </div>
+        </footer>
         </div>
     </main>
 
-    <script src="./scripts/main.js"></script>
+     <!-- scripts -->
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+     <script src="js/script.js"></script>
 </body>
 
 </html>
